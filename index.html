@@ -9,152 +9,214 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-<header>
+<header class="cd-header">
     <div class="container">
-        <img src="images/logo.svg" alt="healthcare logo">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Article</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Get Started</a></li>
-        </ul>
-    </div>
-</header>
-<section class="main_section">
-    <div class="container">
-        <div class="left_side">
-            <h1>Find And Search Your<br> <span>Suitable Doctor’s</span></h1>
-            <p>Join us and take care of yourself and your family with health services that will make you feel confident
-                and safe in your daily life.</p>
-            <form action="#" id="main_form">
-                <div class="search_block">
-                    <div class="form_item1">
-                        <label for="find_doctor"></label>
-                        <input type="search" id="find_doctor" placeholder="Find your doctor">
-                    </div>
-                    <div class="form_item2">
-                        <select name="select_towm" form="main_form">
-                            <option>New York, USA</option>
-                            <option>Kyiv, Ukraine</option>
-                            <option>Ottawa, Canada</option>
-                        </select>
-                    </div>
-                    <div class="form_button">
-                        <button type="submit" form="main_form">
-                            <img src="images/search.svg" alt="">
-                        </button>
+        <div class="row justify-content-between align-items-center">
+            <div class="header-wrapper">
+                <div class="logo-wrap">
+                    <a href="#" class="hover-target">
+                        <img src="images/logo.svg" alt="healthcare logo">
+                    </a>
+                </div>
+                <div class="nav-but-wrap">
+                    <div class="menu-icon hover-target">
+                        <span class="menu-icon__line menu-icon__line-left"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line menu-icon__line-right"></span>
                     </div>
                 </div>
-            </form>
-        </div>
-        <div class="right_side">
-            <div class="doctor_bg">
-                <img class="doctor_bg_circle" src="images/doctor_bg.svg" alt="">
-                <img class="doctor" src="images/female_doctor.svg" alt="">
-                <div class="round_bg1">
-                    <img src="images/doctor_phone.png" alt="">
-                </div>
-                <div class="round_bg2">
-                    <img src="images/discussion.png" alt="">
-                </div>
-                <div class="round_bg3">
-                    <img src="images/video.png" alt="">
-                </div>
-                <div class="square_bg1">
-                    <img src="images/round_doctor.png" alt="">
-                    <div class="stars">
-                        <img src="images/star.svg" alt="">
-                        <img src="images/star.svg" alt="">
-                        <img src="images/star.svg" alt="">
-                        <img src="images/star.svg" alt="">
-                        <img src="images/star.svg" alt="">
-                        <div class="lines">
-                            <img src="images/doctor_line.jpg" alt="">
-                            <img src="images/doctor_line_short.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="square_bg2">
-                    <img src="images/heart.png" alt="">
-                    <p>2500+</p>
-                    <p>Happy Patients</p>
+            </div>
+            <div class="nav">
+                <div class="nav__content">
+                    <ul class="nav__list">
+                        <li class="nav__list-item mob_logo"><a href="#" class="hover-target">
+                            <img src="images/logo.svg" alt="">
+                        </a></li>
+                        <li class="nav__list-item blue"><a href="#" class="hover-target">Home</a></li>
+                        <li class="nav__list-item"><a href="#" class="hover-target">About</a></li>
+                        <li class="nav__list-item"><a href="#" class="hover-target">Article</a></li>
+                        <li class="nav__list-item"><a href="#" class="hover-target">Services</a></li>
+                        <li class="nav__list-item"><a href="#" class="hover-target">Get Started</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+    <div class='cursor2' id="cursor2"></div>
+    <div class='cursor3' id="cursor3"></div>
+</header>
+
+
+<section class="main_section">
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-6">
+                    <h1>Find And Search Your<br> <span>Suitable Doctor’s</span></h1>
+                    <p>Join us and take care of yourself and your family with health services that will make you feel
+                        confident and safe in your daily life.</p>
+                    <form action="#" id="main_form">
+                        <div class="search_block">
+                            <div class="form_item1">
+                                <label for="find_doctor"></label>
+                                <input type="search" id="find_doctor" placeholder="Find your doctor">
+                            </div>
+                            <div class="form_item2">
+                                <select name="select_town" form="main_form">
+                                    <option>New York, USA</option>
+                                    <option>Kyiv, Ukraine</option>
+                                    <option>Ottawa, Canada</option>
+                                </select>
+                            </div>
+                            <div class="form_button">
+                                <button type="submit" form="main_form">
+                                    <img src="images/search.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md d-none d-lg-block">
+                    <div class="doctor_bg">
+                        <img class="doctor_bg_circle" src="images/doctor_bg_min.png" alt="">
+                        <img class="female_doctor" src="images/female_doctor.png" alt="">
+                        <div class="tel_round round_bg">
+                            <img src="images/doctor_phone.png" alt="phone-icon">
+                        </div>
+                        <div class="chat_round round_bg">
+                            <img src="images/discussion.png" alt="chat-icon">
+                        </div>
+                        <div class="video_round round_bg">
+                            <img src="images/video.png" alt="video-icon">
+                        </div>
+                        <div class="square_bg1">
+                            <img class="round_doctor" src="images/round_doctor.png" alt="round_doctor_icon">
+                            <div class="stars">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <div class="lines">
+                                    <img src="images/line1.png" alt="">
+                                    <img src="images/line2.png" alt="">
+                                    <img src="images/line3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="square_bg2">
+                            <img src="images/heart-min.png" alt="heart_icon">
+                            <p>2500+</p>
+                            <span>Happy Patients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--                <div class="round_bg1">-->
+        <!--                    <img src="images/doctor_phone.png" alt="">-->
+        <!--                </div>-->
+        <!--                <div class="round_bg2">-->
+        <!--                    <img src="images/discussion.png" alt="">-->
+        <!--                </div>-->
+        <!--                <div class="round_bg3">-->
+        <!--                    <img src="images/video.png" alt="">-->
+        <!--                </div>-->
+        <!--                <div class="square_bg1">-->
+        <!--                    <img src="images/round_doctor.png" alt="">-->
+        <!--                    <div class="stars">-->
+        <!--                        <img src="images/star.svg" alt="">-->
+        <!--                        <img src="images/star.svg" alt="">-->
+        <!--                        <img src="images/star.svg" alt="">-->
+        <!--                        <img src="images/star.svg" alt="">-->
+        <!--                        <img src="images/star.svg" alt="">-->
+        <!--                        <div class="lines">-->
+        <!--                            <img src="images/doctor_line.jpg" alt="">-->
+        <!--                            <img src="images/doctor_line_short.svg" alt="">-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="square_bg2">-->
+        <!--                    <img src="images/heart.png" alt="">-->
+        <!--                    <p>2500+</p>-->
+        <!--                    <p>Happy Patients</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
 </section>
 
+
 <section class="easy_steps">
-    <div class="container">
-        <h2>3 Easy Steps and Get Your Solution</h2>
-    </div>
-    <div class="container">
-        <div class="steps">
-            <arcticle class="step1_bg">
-                <img src="images/search_step.png    " alt="">
-            </arcticle>
-            <h3>Find best doctor’s</h3>
-            <p>Find your doctor easily with a minimum of effort. We've kept everything organised for you.</p>
+    <div class="container text-center">
+        <div class="row">
+            <h2 class="w-100">3 Easy Steps and Get Your Solution</h2>
+            <div class="col-md-4 text-center col-12 mb-4">
+                <div class="bg_round1 m-auto"></div>
+                <h4>Find best doctor’s</h4>
+                <p class="m-auto">Find your doctor easily with a minimum of effort. We've kept everything organised for
+                    you.</p>
+            </div>
+            <div class="col-md-4 text-center col-12 mb-4">
+                <div class="bg_round2 m-auto"></div>
+                <h4>Get Appointment</h4>
+                <p class="m-auto">Ask for an appointment of the doctor quickly with almost a single click. We take care
+                    of the rest.</p>
+            </div>
+            <div class="col-md-4 text-center col-12">
+                <div class="bg_round3 m-auto"></div>
+                <h4>Happy Consultations</h4>
+                <p class="m-auto">Do consultations and take the service based on your appointment. Get back to good
+                    health</p>
+            </div>
         </div>
-        <div class="steps">
-            <arcticle class="step2_bg">
-                <img src="images/calendar.png" alt="">
-            </arcticle>
-            <h3>Get Appointment</h3>
-            <p>Ask for an appointment of the doctor quickly with almost a single click. We take care of the rest.</p>
-        </div>
-        <div class="steps">
-            <arcticle class="step3_bg">
-                <img src="images/healthcare.png" alt="">
-            </arcticle>
-            <h3>Happy Consultations</h3>
-            <p>Do consultations and take the service based on your appointment. Get back to good health</p></div>
     </div>
 </section>
 
 <section class="best_quality">
-    <div class="container">
-        <div class="quality_left border">
-            <div class="doctor_top">
-                <img src="images/Elips.svg" alt="">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-md-6 justify-content-md-center">
+                <div class="quality_left">
+                    <div class="doctor_top">
+                        <img src="images/Elips.svg" alt="">
+                    </div>
+                    <div class="doctor_bottom">
+                        <img src="images/crello-min.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="doctor_bottom">
-                <img src="images/crello.svg" alt="">
+            <div class="col-md-6 d-flex justify-content-end">
+                <div class="quality_right ">
+                    <h2>Best quality service with our experience
+                        doctors</h2>
+                    <p>With our top doctors, we are able to provide best medical services above average We have highly
+                        experienced doctors, so don't worry They are also very talented in their fields</p>
+                    <ul>
+                        <li>Search your specialist & Online consultations anywhere</li>
+                        <li>Consultation our top specialists</li>
+                        <li>Doctors are available 24/7</li>
+                    </ul>
+                    <a class="d-inline-block" href="#">Explore specialists</a>
+                </div>
             </div>
         </div>
-        <div class="quality_right">
-            <h2>Best quality service with our experience
-                doctors</h2>
-            <p>With our top doctors, we are able to provide best medical services above average We have highly
-                experienced doctors, so don't worry They are also very talented in their fields</p>
-            <ul>
-                <li>Search your specialist & Online consultations anywhere</li>
-                <li>Consultation our top specialists</li>
-                <li>Doctors are available 24/7</li>
-            </ul>
-            <a href="#">Explore specialists</a>
-        </div>
-
-        <div class="square_bg3">
-            <img src="images/cheerful.png" alt="">
-            <div class="lines">
-                <img src="images/line1.png" alt="">
-                <img src="images/line2.png" alt="">
-                <img src="images/line3.png" alt="">
-            </div>
-            <div class="square_bg4">
-                <img src="images/Love.svg" alt="">
-                <div class="khalid_row1">
+        <div class="khalid_position position-absolute">
+            <div class="square_khalid w100">
+                <img class="heart_img" src="images/Love.svg" alt="">
+                <div class="khalid_row1 d-flex justify-content-end">
                     <img src="images/chalid.png" alt="">
                     <div class="khalid_text">
                         <h4>Dr. Khalid Abbed</h4>
                         <p>Carddiologist (MBBS)<span>5.0</span></p>
                     </div>
                 </div>
-                <div class="khalid_row2">
+                <div class="khalid_row2 d-flex justify-content-between m-auto">
                     <div class="khalid_text_center">
                         <p>Experience</p>
                         <span>5 Years</span>
@@ -168,51 +230,60 @@
                         <span>2.5K</span>
                     </div>
                 </div>
-                <p>Mayo Clinic Hospital</p>
+                <p class="location">Mayo Clinic Hospital</p>
+            </div>
+        </div>
+
+        <div class="square_bg3">
+            <img src="images/cheerful.png" alt="">
+            <div class="lines">
+                <img src="images/line1.png" alt="">
+                <img src="images/line2.png" alt="">
+                <img src="images/line3.png" alt="">
             </div>
         </div>
     </div>
 </section>
 
-<section class="slider">
-    <div class="container">
+<section class="our_service">
+    <div class="container text-center">
         <h2>Our Service</h2>
         <p>Our doctors have high qualified skills and are guaranteed to help you recover from your disease.</p>
-    </div>
-    <div class="container">
-        <div class="owl-carousel owl-theme owl-carousel_1">
-            <div class="carousel_item crbg_1">
+        <div class="owl-carousel owl-carousel_1 owl-theme">
+            <div class="item_1">
                 <img src="images/carousel_heart.png" alt="">
                 <h4>Cardiology</h4>
                 <p>Our cardiologists are skilled at the diagnosing and treating diseases
                     of the cardiovascular system.</p>
             </div>
-            <div class="carousel_item crbg_2">
+            <div class="item_2">
                 <img src="images/pulmonology.png" alt="">
                 <h4>Pulmonology</h4>
                 <p>Our Pulmonologist are skilled at diagnosing treating diseases of the Pulmonology system.</p>
             </div>
-            <div class="carousel_item crbg_3">
+            <div class="item_3">
                 <img src="images/medicine.png" alt="">
                 <h4>Medicine</h4>
                 <p>Our medcine doctor are skilled at diagnosing treating diseases of the latest medicne system.</p>
             </div>
-            <div class="carousel_item crbg_1">
+            <div class="item_1">
                 <img src="images/carousel_heart.png" alt="">
                 <h4>Cardiology</h4>
                 <p>Our cardiologists are skilled at the diagnosing and treating diseases
                     of the cardiovascular system.</p>
             </div>
-            <div class="carousel_item crbg_2">
+            <div class="item_2">
                 <img src="images/pulmonology.png" alt="">
                 <h4>Pulmonology</h4>
                 <p>Our Pulmonologist are skilled at diagnosing treating diseases of the Pulmonology system.</p>
             </div>
-            <div class="carousel_item crbg_3">
+            <div class="item_3">
                 <img src="images/medicine.png" alt="">
                 <h4>Medicine</h4>
                 <p>Our medcine doctor are skilled at diagnosing treating diseases of the latest medicne system.</p>
             </div>
+
+
         </div>
     </div>
 </section>
@@ -224,57 +295,59 @@
         <p>Our online doctors have an average of 15 years experience and a 98% satisfaction rating, they really set us
             apart!</p>
     </div>
-    <div class="container doctors_block">
-        <div class="online_doctor_bg">
-            <div class="doctor_photo">
-                <img src="images/amanda.jpg" alt="">
+    <div class="container doctors_block text-center">
+        <div class="row justify-content-md-between justify-content-around">
+            <div class="col-md-3 col-6 mb-5 online_doctor_bg text-center">
+                <div class="overflow-hidden doctor_photo">
+                    <img src="images/amanda.jpg" alt="">
+                </div>
+                <h4>Dr Amanda Linda </h4>
+                <p>Dentist Specilist</p>
+                <div class="social_media">
+                    <a class="fb_bg" href="#"></a>
+                    <a class="twitter_bg" href="#"></a>
+                    <a class="in_bg" href="#"></a>
+                </div>
             </div>
-            <h4>Dr Amanda Linda</h4>
-            <p>Dentist Specilist</p>
-            <div class="social_media">
-                <a href="#"><img src="images/Fb.png" alt=""></a>
-                <a href="#"><img src="images/Tw.png" alt=""></a>
-                <a href="#"><img src="images/Ld.png" alt=""></a>
+            <div class="col-md-3 col-6 mb-5 online_doctor_bg text-center">
+                <div class="overflow-hidden doctor_photo">
+                    <img src="images/alisa.jpg" alt="">
+                </div>
+                <h4>Dr. Alisa Rahman</h4>
+                <p>Carddiologist Specilist</p>
+                <div class="social_media">
+                    <a class="fb_bg" href="#"></a>
+                    <a class="twitter_bg" href="#"></a>
+                    <a class="in_bg" href="#"></a>
+                </div>
             </div>
-        </div>
-        <div class="online_doctor_bg">
-            <div class="doctor_photo">
-                <img src="images/alisa.jpg" alt="">
+            <div class="col-md-3 col-6 mb-5 online_doctor_bg text-center">
+                <div class="overflow-hidden doctor_photo">
+                    <img src="images/anthony.jpg" alt="">
+                </div>
+                <h4>Dr. Anthony Fauci</h4>
+                <p>Neurology Specilist</p>
+                <div class="social_media">
+                    <a class="fb_bg" href="#"></a>
+                    <a class="twitter_bg" href="#"></a>
+                    <a class="in_bg" href="#"></a>
+                </div>
             </div>
-            <h4>Dr. Alisa Rahman</h4>
-            <p>Carddiologist Specilist</p>
-            <div class="social_media">
-                <a href="#"><img src="images/Fb.png" alt=""></a>
-                <a href="#"><img src="images/Tw.png" alt=""></a>
-                <a href="#"><img src="images/Ld.png" alt=""></a>
-            </div>
-        </div>
-        <div class="online_doctor_bg">
-            <div class="doctor_photo">
-                <img src="images/anthony.jpg" alt="">
-            </div>
-            <h4>Dr. Anthony Fauci</h4>
-            <p>Neurology Specilist</p>
-            <div class="social_media">
-                <a href="#"><img src="images/Fb.png" alt=""></a>
-                <a href="#"><img src="images/Tw.png" alt=""></a>
-                <a href="#"><img src="images/Ld.png" alt=""></a>
-            </div>
-        </div>
-        <div class="online_doctor_bg">
-            <div class="doctor_photo">
-                <img src="images/khalid.jpg" alt="">
-            </div>
-            <h4>Dr. Khalid Abbed</h4>
-            <p>Cancer Specilist</p>
-            <div class="social_media">
-                <a href="#"><img src="images/Fb.png" alt=""></a>
-                <a href="#"><img src="images/Tw.png" alt=""></a>
-                <a href="#"><img src="images/Ld.png" alt=""></a>
+            <div class="col-md-3 col-6 mb-5 online_doctor_bg text-center">
+                <div class="overflow-hidden doctor_photo">
+                    <img src="images/khalid.jpg" alt="">
+                </div>
+                <h4>Dr. Khalid Abbed</h4>
+                <p>Cancer Specialist</p>
+                <div class="social_media">
+                    <a class="fb_bg" href="#"></a>
+                    <a class="twitter_bg" href="#"></a>
+                    <a class="in_bg" href="#"></a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container text-center">
         <a href="#">Explore All Doctors</a>
     </div>
 </section>
@@ -285,7 +358,7 @@
             <h2>Mobile apps are available Get HealthCare for free!</h2>
             <p>Get on-demand access to a doctor on your phone with the free HealthCare mobile app. Download and register
                 on our app for free and feel safe for all your family</p>
-            <a href="#"><img src="images/googleplay.png" alt=""></a>
+            <a class="mb-2" href="#"><img src="images/googleplay.png" alt=""></a>
             <a href="#"><img src="images/appstore.png" alt=""></a>
         </div>
     </div>
@@ -294,36 +367,179 @@
 <section class="clients">
     <div class="container">
         <h2>Look our Clients have to say about us</h2>
-    </div>
-    <div class="container">
         <div class="owl-carousel owl-carousel_2">
-            <div class="client_bg">
-                <div class="client_round">
-                    <img src="" alt="">
+            <div>
+                <div class="round_photo">
+                    <img src="images/alan-min.jpg" alt="">
                 </div>
-                <div class="client_name">
-                    <div class="name_location">
-                        <p>Alan Zara dilan</p>
-                        <p>New York, America, USA</p>
-                    </div>
-                    <div class="clients_stars">
-                        <img src="images/star.svg" alt="">
-                        <img src="images/star.svg" alt="">
-                        <img src="images/star.svg" alt="">
-                        <img src="images/star.svg" alt="">
-                        <img src="images/star.svg" alt="">
+                <div class="name_stars">
+                    <h4>Alan Zara dilan</h4>
+                    <div class="star_icons">
+                        <span></span>
                     </div>
                 </div>
-                <p>Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great revolution in medical services specially an overpopulated country where virtual chamber can create at anywhere thoughout country</p>
+                <p>New York, America, USA</p>
+                <p>Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great
+                    revolution in medical services specially an overpopulated country where virtual chamber can create
+                    at anywhere thoughout country</p>
+                <span class="quote_bg"></span>
+            </div>
+            <div>
+                <div class="round_photo">
+                    <img src="images/alex-min.jpg" alt="">
+                </div>
+                <div class="name_stars">
+                    <h4>Alex Maxwell</h4>
+                    <div class="star_icons">
+                        <span></span>
+                    </div>
+                </div>
+                <p>San Francisco, USA</p>
+                <p>I visited my PCP for abdominal pain. My doctor told me that I need to see Gastroenterologist. Earlier
+                    I used to call multiple offices to schedule an appointment that suites my time.</p>
+                <span class="quote_bg"></span>
+            </div>
+            <div>
+                <div class="round_photo">
+                    <img src="images/tasnim-min.jpg" alt="">
+                </div>
+                <div class="name_stars">
+                    <h4>Dr. Tasnim zara</h4>
+                    <div class="star_icons">
+                        <span></span>
+                    </div>
+                </div>
+                <p>Los Angeles, USA</p>
+                <p>HealthCare is enlightens my superpower each and every time...!
+                    I find DocTime a brand-able telemedicine platform with virtual waiting room, video consultation,
+                    e-prescription, beautifully planned user interface.
+                    Thank you :)</p>
+                <span class="quote_bg"></span>
+            </div>
+            <div>
+                <div class="round_photo">
+                    <img src="images/alan-min.jpg" alt="">
+                </div>
+                <div class="name_stars">
+                    <h4>Alan Zara dilan</h4>
+                    <div class="star_icons">
+                        <span></span>
+                    </div>
+                </div>
+                <p>New York, America, USA</p>
+                <p>Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great
+                    revolution in medical services specially an overpopulated country where virtual chamber can create
+                    at anywhere thoughout country</p>
+                <span class="quote_bg"></span>
+            </div>
+            <div>
+                <div class="round_photo">
+                    <img src="images/alex-min.jpg" alt="">
+                </div>
+                <div class="name_stars">
+                    <h4>Alex Maxwell</h4>
+                    <div class="star_icons">
+                        <span></span>
+                    </div>
+                </div>
+                <p>San Francisco, USA</p>
+                <p>I visited my PCP for abdominal pain. My doctor told me that I need to see Gastroenterologist. Earlier
+                    I used to call multiple offices to schedule an appointment that suites my time.</p>
+                <span class="quote_bg"></span>
+            </div>
+            <div>
+                <div class="round_photo">
+                    <img src="images/tasnim-min.jpg" alt="">
+                </div>
+                <div class="name_stars">
+                    <h4>Dr. Tasnim zara</h4>
+                    <div class="star_icons">
+                        <span></span>
+                    </div>
+                </div>
+                <p>Los Angeles, USA</p>
+                <p>HealthCare is enlightens my superpower each and every time...!
+                    I find DocTime a brand-able telemedicine platform with virtual waiting room, video consultation,
+                    e-prescription, beautifully planned user interface.
+                    Thank you :)</p>
+                <span class="quote_bg"></span>
             </div>
 
-
-
-            <div class="client_bg"> Your Content</div>
-            <div class="client_bg"> Your Content</div>
-            <div class="client_bg"> Your Content</div>
-
         </div>
+    </div>
+    <!--    <div class="container">-->
+    <!--        <h2>Look our Clients have to say about us</h2>-->
+    <!--    </div>-->
+    <!--    <div class="container">-->
+    <!--        <div class="owl-carousel owl-carousel_2">-->
+    <!--            <div class="client_bg">-->
+    <!--                <div class="client_round">-->
+    <!--                    <img src="images/alan-min.jpg" alt="">-->
+    <!--                </div>-->
+    <!--                <div class="client_name">-->
+    <!--                    <div class="name_location">-->
+    <!--                        <p>Alan Zara dilan</p>-->
+    <!--                        <p>New York, America, USA</p>-->
+    <!--                    </div>-->
+    <!--                    <div class="clients_stars">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <p>Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great-->
+    <!--                    revolution in medical services specially an overpopulated country where virtual chamber can create-->
+    <!--                    at anywhere thoughout country</p>-->
+    <!--            </div>-->
+
+    <!--            <div class="client_bg">-->
+    <!--                <div class="client_round">-->
+    <!--                    <img src="images/alex-min.jpg" alt="">-->
+    <!--                </div>-->
+    <!--                <div class="client_name">-->
+    <!--                    <div class="name_location">-->
+    <!--                        <p>Alex Maxwell</p>-->
+    <!--                        <p>San Francisco, USA</p>-->
+    <!--                    </div>-->
+    <!--                    <div class="clients_stars">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <p>I visited my PCP for abdominal pain. My doctor told me that I need to see Gastroenterologist. Earlier-->
+    <!--                    I used to call multiple offices to schedule an appointment that suites my time.</p>-->
+    <!--            </div>-->
+
+    <!--            <div class="client_bg">-->
+    <!--                <div class="client_round">-->
+    <!--                    <img src="images/tasnim-min.jpg" alt="">-->
+    <!--                </div>-->
+    <!--                <div class="client_name">-->
+    <!--                    <div class="name_location">-->
+    <!--                        <p>Dr. Tasnim zara</p>-->
+    <!--                        <p>Los Angeles, USA</p>-->
+    <!--                    </div>-->
+    <!--                    <div class="clients_stars">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                        <img src="images/star.svg" alt="">-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <p>HealthCare is enlightens my superpower each and every time...!-->
+    <!--                    I find DocTime a brand-able telemedicine platform with virtual waiting room, video consultation,-->
+    <!--                    e-prescription, beautifully planned user interface.-->
+    <!--                    Thank you :)</p>-->
+    <!--            </div>-->
+
+
+    </div>
     </div>
 
 </section>
@@ -332,6 +548,7 @@
 <script src="https://kit.fontawesome.com/18846f0aad.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/script.js"></script>
 </body>
