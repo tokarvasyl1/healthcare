@@ -256,7 +256,7 @@
     width: 100%;
 }
 .nav__list-item a:hover{
-    color: rgba(255,255,255,1);
+    color: #0056b3;
 }
 .nav__list-item.active-nav a{
     color: rgba(255,255,255,1);
