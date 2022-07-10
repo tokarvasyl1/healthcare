@@ -47,19 +47,6 @@ $(document).ready(function(){
     });
 });
 
-
-
-
-
-
-
-
-
-
-
-/* Please ❤ this if you like it! */
-
-
 (function($) { "use strict";
 
     //Page cursors

@@ -106,7 +106,6 @@ body {
     .cd-header .nav__content {
       position: fixed;
       visibility: hidden;
-      -webkit-transform: none;
       transform: none; }
     .cd-header .nav__list-item {
       opacity: 0;
@@ -299,6 +298,8 @@ body {
             max-width: inherit;
             width: 100%;
             margin-bottom: 10px; } }
+        .main_section .content .search_block .form_item2 label {
+          display: none; }
         .main_section .content .search_block .form_item2:after {
           content: "";
           position: absolute;
@@ -328,7 +329,6 @@ body {
           border: none;
           outline: none;
           appearance: none;
-          moz-appearance: none;
           -webkit-appearance: none;
           cursor: pointer;
           font-family: 'Poppins 400', serif;
@@ -337,6 +337,10 @@ body {
           font-size: 14px;
           line-height: 24px;
           color: #3D3D3F; }
+          @media screen and (max-width: 950px) {
+            .main_section .content .search_block .form_item2 select {
+              text-align: center;
+              margin-left: -15px; } }
           @media screen and (max-width: 1150px) {
             .main_section .content .search_block .form_item2 select {
               font-size: 10px; } }
@@ -606,7 +610,7 @@ body {
       background: #40A3F8;
       border-radius: 5px;
       padding: 10px 20px;
-      font-family: 'Roboto 400';
+      font-family: 'Roboto 400', serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -641,14 +645,14 @@ body {
       top: 22px;
       left: -10px; }
     .best_quality .square_khalid .khalid_row1 .khalid_text h4 {
-      font-family: 'Poppins 500';
+      font-family: 'Poppins 500', serif;
       font-style: normal;
       font-weight: 500;
       font-size: 20px;
       line-height: 32px;
       color: #3D3D3F; }
     .best_quality .square_khalid .khalid_row1 .khalid_text p {
-      font-family: 'Poppins 400';
+      font-family: 'Poppins 400', serif;
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
@@ -656,7 +660,7 @@ body {
       color: rgba(61, 61, 63, 0.4);
       margin-bottom: 0; }
       .best_quality .square_khalid .khalid_row1 .khalid_text p span {
-        font-family: 'Poppins';
+        font-family: 'Poppins', serif;
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -676,7 +680,7 @@ body {
       .best_quality .square_khalid .khalid_row2 .khalid_text_center {
         text-align: center; }
         .best_quality .square_khalid .khalid_row2 .khalid_text_center p {
-          font-family: 'SF Pro Display';
+          font-family: 'SF Pro Display 400', serif;
           font-style: normal;
           font-weight: 400;
           font-size: 12px;
@@ -687,7 +691,7 @@ body {
           margin-bottom: 0; }
         .best_quality .square_khalid .khalid_row2 .khalid_text_center span {
           text-align: center;
-          font-family: 'Poppins 500';
+          font-family: 'Poppins 500', serif;
           font-style: normal;
           font-weight: 500;
           font-size: 12px;
@@ -698,7 +702,7 @@ body {
           position: relative;
           top: -10px; }
     .best_quality .square_khalid .location {
-      font-family: 'Poppins 400';
+      font-family: 'Poppins 400', serif;
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
@@ -771,7 +775,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 10px;
     min-height: 316px;
-    box-shadow: 0px 4px 120px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 120px rgba(0, 0, 0, 0.05);
     padding: 162px 20px 31px 20px;
     position: relative; }
     .our_service .owl-carousel_1 .owl-item h4 {
@@ -1049,7 +1053,7 @@ body {
     padding: 22px 10px 32px 10px;
     min-height: 370px;
     background: linear-gradient(132.1deg, rgba(255, 255, 255, 0.88) 0.65%, #FAFAFA 103.13%);
-    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 22px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     position: relative; }
     .clients .owl-carousel_2 .owl-item .round_photo {
@@ -1305,15 +1309,8 @@ footer {
         margin-bottom: 0; }
         footer .container .footer_category ul li {
           margin-bottom: 24px; }
-          footer .container .footer_category ul li:last-of-type {
+          footer .container .footer_category ul li :last-of-type {
             margin-bottom: 0; }
-          footer .container .footer_category ul li:first-of-type a {
-            font-family: 'Roboto 700', serif;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 16px;
-            color: #323232; }
           footer .container .footer_category ul li a {
             text-decoration: none;
             font-family: 'Roboto 400', serif;
@@ -1322,6 +1319,13 @@ footer {
             font-size: 14px;
             line-height: 14px;
             color: #646464; }
+        footer .container .footer_category ul li:first-of-type a {
+          font-family: 'Roboto 700', serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 16px;
+          color: #323232; }
     footer .container .about_category {
       max-width: 110px; }
       @media screen and (max-width: 850px) {

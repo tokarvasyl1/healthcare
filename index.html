@@ -6,10 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Healthcare</title>
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 <header class="cd-header">
@@ -48,23 +45,25 @@
     <div class='cursor2' id="cursor2"></div>
     <div class='cursor3' id="cursor3"></div>
 </header>
-<form action="#" id="main_form" name="form1">
-    <section class="main_section">
-        <div class="content">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col-12 col-lg-6 text-center">
-                        <h1>Find And Search Your<br> <span>Suitable Doctor’s</span></h1>
-                        <p>Join us and take care of yourself and your family with health services that will make you
-                            feel
-                            confident and safe in your daily life.</p>
+
+<section class="main_section">
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-lg-6 text-center">
+                    <h1>Find And Search Your<br> <span>Suitable Doctor’s</span></h1>
+                    <p>Join us and take care of yourself and your family with health services that will make you
+                        feel
+                        confident and safe in your daily life.</p>
+                    <form action="#" id="main_form" name="form1">
                         <div class="search_block">
                             <div class="form_item1">
                                 <label for="find_doctor"></label>
                                 <input type="search" id="find_doctor" placeholder="Find your doctor">
                             </div>
                             <div class="form_item2">
-                                <select name="select_town" form="main_form">
+                                <label for="town_select"></label>
+                                <select name="select_town" form="main_form" id="town_select">
                                     <option>New York, USA</option>
                                     <option>Kyiv, Ukraine</option>
                                     <option>Ottawa, Canada</option>
@@ -76,48 +75,47 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md d-none d-lg-block">
-                        <div class="doctor_bg">
-                            <img class="doctor_bg_circle" src="images/doctor_bg_min.png" alt="">
-                            <img class="female_doctor" src="images/female_doctor.png" alt="">
-                            <div class="tel_round round_bg">
-                                <img src="images/doctor_phone.png" alt="phone-icon">
-                            </div>
-                            <div class="chat_round round_bg">
-                                <img src="images/discussion.png" alt="chat-icon">
-                            </div>
-                            <div class="video_round round_bg">
-                                <img src="images/video.png" alt="video-icon">
-                            </div>
-                            <div class="square_bg1">
-                                <img class="round_doctor" src="images/round_doctor.png" alt="round_doctor_icon">
-                                <div class="stars">
-                                    <img src="images/star.svg" alt="">
-                                    <img src="images/star.svg" alt="">
-                                    <img src="images/star.svg" alt="">
-                                    <img src="images/star.svg" alt="">
-                                    <img src="images/star.svg" alt="">
-                                    <div class="lines">
-                                        <img src="images/line1.png" alt="">
-                                        <img src="images/line2.png" alt="">
-                                        <img src="images/line3.png" alt="">
-                                    </div>
+                    </form>
+                </div>
+                <div class="col-md d-none d-lg-block">
+                    <div class="doctor_bg">
+                        <img class="doctor_bg_circle" src="images/doctor_bg_min.png" alt="">
+                        <img class="female_doctor" src="images/female_doctor.png" alt="">
+                        <div class="tel_round round_bg">
+                            <img src="images/doctor_phone.png" alt="phone-icon">
+                        </div>
+                        <div class="chat_round round_bg">
+                            <img src="images/discussion.png" alt="chat-icon">
+                        </div>
+                        <div class="video_round round_bg">
+                            <img src="images/video.png" alt="video-icon">
+                        </div>
+                        <div class="square_bg1">
+                            <img class="round_doctor" src="images/round_doctor.png" alt="round_doctor_icon">
+                            <div class="stars">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <div class="lines">
+                                    <img src="images/line1.png" alt="">
+                                    <img src="images/line2.png" alt="">
+                                    <img src="images/line3.png" alt="">
                                 </div>
                             </div>
-                            <div class="square_bg2">
-                                <img src="images/heart-min.png" alt="heart_icon">
-                                <p>2500+</p>
-                                <span>Happy Patients</span>
-                            </div>
+                        </div>
+                        <div class="square_bg2">
+                            <img src="images/heart-min.png" alt="heart_icon">
+                            <p>2500+</p>
+                            <span>Happy Patients</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-    </section>
-</form>
+    </div>
+</section>
 
 <section class="easy_steps">
     <div class="container text-center">
@@ -249,8 +247,6 @@
                 <h4>Medicine</h4>
                 <p>Our medcine doctor are skilled at diagnosing treating diseases of the latest medicne system.</p>
             </div>
-
-
         </div>
     </div>
 </section>
@@ -431,84 +427,8 @@
                     Thank you :)</p>
                 <span class="quote_bg"></span>
             </div>
-
         </div>
     </div>
-    <!--    <div class="container">-->
-    <!--        <h2>Look our Clients have to say about us</h2>-->
-    <!--    </div>-->
-    <!--    <div class="container">-->
-    <!--        <div class="owl-carousel owl-carousel_2">-->
-    <!--            <div class="client_bg">-->
-    <!--                <div class="client_round">-->
-    <!--                    <img src="images/alan-min.jpg" alt="">-->
-    <!--                </div>-->
-    <!--                <div class="client_name">-->
-    <!--                    <div class="name_location">-->
-    <!--                        <p>Alan Zara dilan</p>-->
-    <!--                        <p>New York, America, USA</p>-->
-    <!--                    </div>-->
-    <!--                    <div class="clients_stars">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <p>Telehealth is fueled by digital technologies and DocTime telemedicine app has brought a great-->
-    <!--                    revolution in medical services specially an overpopulated country where virtual chamber can create-->
-    <!--                    at anywhere thoughout country</p>-->
-    <!--            </div>-->
-
-    <!--            <div class="client_bg">-->
-    <!--                <div class="client_round">-->
-    <!--                    <img src="images/alex-min.jpg" alt="">-->
-    <!--                </div>-->
-    <!--                <div class="client_name">-->
-    <!--                    <div class="name_location">-->
-    <!--                        <p>Alex Maxwell</p>-->
-    <!--                        <p>San Francisco, USA</p>-->
-    <!--                    </div>-->
-    <!--                    <div class="clients_stars">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <p>I visited my PCP for abdominal pain. My doctor told me that I need to see Gastroenterologist. Earlier-->
-    <!--                    I used to call multiple offices to schedule an appointment that suites my time.</p>-->
-    <!--            </div>-->
-
-    <!--            <div class="client_bg">-->
-    <!--                <div class="client_round">-->
-    <!--                    <img src="images/tasnim-min.jpg" alt="">-->
-    <!--                </div>-->
-    <!--                <div class="client_name">-->
-    <!--                    <div class="name_location">-->
-    <!--                        <p>Dr. Tasnim zara</p>-->
-    <!--                        <p>Los Angeles, USA</p>-->
-    <!--                    </div>-->
-    <!--                    <div class="clients_stars">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                        <img src="images/star.svg" alt="">-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <p>HealthCare is enlightens my superpower each and every time...!-->
-    <!--                    I find DocTime a brand-able telemedicine platform with virtual waiting room, video consultation,-->
-    <!--                    e-prescription, beautifully planned user interface.-->
-    <!--                    Thank you :)</p>-->
-    <!--            </div>-->
-
-
-    </div>
-    </div>
-
 </section>
 
 <section class="time">
@@ -584,9 +504,7 @@
 </section>
 
 
-
-
-<script src="https://kit.fontawesome.com/18846f0aad.js" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/18846f0aad.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
