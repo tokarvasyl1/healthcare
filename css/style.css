@@ -836,7 +836,8 @@ body {
       border: 1px solid #EEEFF1;
       box-shadow: 0 4px 120px rgba(0, 0, 0, 0.05);
       border-radius: 10px;
-      margin-bottom: 18px; }
+      margin-bottom: 18px;
+      overflow: hidden; }
       .online_doctors .online_doctor_bg .doctor_photo img {
         display: block;
         position: relative;
@@ -1124,5 +1125,69 @@ body {
         background-image: url("../images/next_vector.svg");
         width: 11px;
         height: 18px; }
+
+.time {
+  padding-top: 105px;
+  padding-bottom: 55px; }
+  .time .container {
+    max-width: 1140px;
+    padding-top: 82px;
+    padding-bottom: 92px;
+    background: #40A3F8 url("../images/time-min.png") 0 -120px no-repeat;
+    background-size: 150%;
+    border-radius: 12px;
+    position: relative; }
+    @media screen and (max-width: 768px) {
+      .time .container {
+        padding-top: 30px;
+        padding-bottom: 30px; } }
+    .time .container .time_text {
+      margin-left: 118px; }
+      @media screen and (max-width: 991px) {
+        .time .container .time_text {
+          margin-left: inherit; } }
+      .time .container .time_text p {
+        font-family: 'Roboto 700', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin-bottom: 30px; }
+        @media screen and (max-width: 850px) {
+          .time .container .time_text p {
+            font-size: 30px; } }
+        @media screen and (max-width: 768px) {
+          .time .container .time_text p {
+            font-size: 20px; } }
+      .time .container .time_text a {
+        font-family: 'Roboto 500', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #40A3F8;
+        padding: 16px 17px;
+        background: #FFFFFF;
+        box-shadow: 0 4px 22px rgba(0, 0, 0, 0.05);
+        border-radius: 5px; }
+        @media screen and (max-width: 768px) {
+          .time .container .time_text a {
+            font-size: 15px; } }
+    .time .container img {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: -100px; }
+      @media screen and (max-width: 800px) {
+        .time .container img {
+          width: 70%; } }
+      @media screen and (max-width: 800px) {
+        .time .container img {
+          right: -70px; } }
+      @media screen and (max-width: 475px) {
+        .time .container img {
+          right: -50px; } }
 
 /*# sourceMappingURL=style.css.map */
