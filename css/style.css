@@ -339,8 +339,7 @@ body {
           color: #3D3D3F; }
           @media screen and (max-width: 950px) {
             .main_section .content .search_block .form_item2 select {
-              text-align: center;
-              margin-left: -15px; } }
+              text-align: center; } }
           @media screen and (max-width: 1150px) {
             .main_section .content .search_block .form_item2 select {
               font-size: 10px; } }
