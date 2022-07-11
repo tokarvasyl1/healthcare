@@ -10,7 +10,7 @@ $(document).ready(function(){
         responsive:{
             0:{
                 items:1,
-                margin:10,
+                margin:100,
 
             },
             700:{
@@ -34,7 +34,6 @@ $(document).ready(function(){
         responsive:{
             0:{
                 items:1,
-                margin:10,
 
 
             },
