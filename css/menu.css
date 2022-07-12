@@ -257,7 +257,18 @@
 }
 .nav__list-item a:hover{
     color: #0056b3;
+    opacity: 1;
 }
+
+
+.nav__list-item:nth-child(2) a:hover{
+    color: black;
+}
+
+.nav__list-item:nth-child(6) a:hover{
+    color: black;
+}
+
 .nav__list-item.active-nav a{
     color: rgba(255,255,255,1);
 }

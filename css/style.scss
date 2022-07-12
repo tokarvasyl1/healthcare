@@ -126,6 +126,7 @@
 body {
   background-image: url("../images/bg_body.jpg");
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .container {
@@ -192,6 +193,9 @@ body {
 
         a {
           font-size: 40px;
+         &:hover{
+           color: #0056b3;
+         }
         }
       }
 
@@ -226,6 +230,9 @@ body {
         a {
           font-size: 40px;
           padding: 30px 50px;
+          &:hover{
+            color: #0056b3;
+          }
         }
       }
     }
@@ -350,7 +357,7 @@ body {
       padding: 13px;
       justify-content: space-between;
 
-      @include max-screen(950px) {
+      @include max-screen(991px) {
         display: block;
       }
       @include max-screen(768px) {
@@ -373,7 +380,7 @@ body {
           max-width: 170px;
           padding: 15px 10px;
         }
-        @include max-screen(950px) {
+        @include max-screen(991px) {
           max-width: inherit;
           width: 100%;
           padding: 15px 10px;
@@ -422,7 +429,7 @@ body {
         @include max-screen(1000px) {
           margin-right: 20px;
         }
-        @include max-screen(950px) {
+        @include max-screen(991px) {
           max-width: inherit;
           width: 100%;
           margin-bottom: 10px;
@@ -453,7 +460,7 @@ body {
           display: block;
           width: 15px;
           height: 17px;
-          background-image: url("../images/Location.svg");
+          background: url("../images/Location.svg") 0 0 no-repeat;
           @include max-screen(1150px) {
             background-image: none;
           }
@@ -468,7 +475,7 @@ body {
           appearance: none;
           -webkit-appearance: none;
           cursor: pointer;
-          @include max-screen(950px) {
+          @include max-screen(991px) {
             text-align: center;
 
           }
@@ -495,6 +502,9 @@ body {
         border-radius: 8px;
         cursor: pointer;
         z-index: 2;
+        @include max-screen(991px){
+          width: 100%;
+        }
 
         button {
           background: transparent;
@@ -502,6 +512,9 @@ body {
           height: 100%;
           border: none;
           cursor: pointer;
+          &:hover{
+            opacity: 0.4;
+          }
 
         }
       }
@@ -850,6 +863,9 @@ body {
       line-height: 30px;
       letter-spacing: 0.02em;
       color: #FFFFFF;
+      &:hover{
+        opacity: 0.7;
+      }
 
       &:after {
         content: "";
@@ -1247,6 +1263,11 @@ body {
     }
 
     .social_media {
+      a{
+        &:hover{
+          opacity: 0.7;
+        }
+      }
       .fb_bg {
         display: inline-block;
         background: #4D77CF;
@@ -1318,6 +1339,9 @@ body {
       border-radius: 5px;
       color: #FFFFFF;
       text-shadow: 0 4px 22px rgba(0, 0, 0, 0.05);
+      &:hover{
+        opacity: 0.8;
+      }
     }
   }
 }
@@ -1642,6 +1666,9 @@ body {
         box-shadow: 0 4px 22px rgba(0, 0, 0, 0.05);
         border-radius: 5px;
         text-decoration: none;
+        &:hover{
+          opacity: 0.8;
+        }
         @include max-screen(768px) {
           font-size: 15px;
         }
@@ -1714,6 +1741,7 @@ footer {
           background: url("../images/inst_footer.png") 0 -1px;
           width: 18px;
           height: 17px;
+
         }
 
         .footer_twitter span:before {
@@ -1729,6 +1757,9 @@ footer {
         }
 
         a {
+          &:hover{
+            opacity: 0.4;
+          }
           span {
             background: #646464;
             width: 32px;
@@ -1776,7 +1807,11 @@ footer {
             font-size: 14px;
             line-height: 14px;
             color: #646464;
+            &:hover{
+              color: black;
+            }
           }
+
         }
         li:first-of-type a {
           font-family: 'Roboto 700', serif;
@@ -1822,6 +1857,9 @@ footer {
             font-size: 14px;
             line-height: 14px;
             color: #646464;
+            &:hover{
+              color: black;
+            }
           }
         }
       }
@@ -1882,6 +1920,9 @@ footer {
         line-height: 16px;
         letter-spacing: 0.02em;
         color: #FFFFFF;
+        &:hover{
+          opacity: 0.8;
+        }
       }
     }
   }
@@ -1940,6 +1981,9 @@ footer {
       line-height: 14px;
       color: #646464;
       text-decoration: none;
+      &:hover{
+        color: black;
+      }
     }
   }
 }
